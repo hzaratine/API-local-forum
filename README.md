@@ -48,39 +48,39 @@ O servidor iniciará escutando requisições na porta 3000.
 
 ## Evidências de Interface e Testes do Sistema
 
-### Tela de Login
+### Linha do Tempo e Feed Global
 
-A tela de login permite que usuários cadastrados realizem a autenticação utilizando suas credenciais.
+A tela principal apresenta o feed global da plataforma, exibindo as publicações armazenadas, o autor da publicação, carimbo de data/hora, corpo do texto e a respectiva imagem anexada via upload.
 
-<img width="884" height="609" alt="captura1" src="https://github.com/user-attachments/assets/55120ed2-2279-46a1-b32e-13ebdedd9662" />
-
-### Tela de Cadastro
-
-A tela de cadastro permite o registro de novos usuários na plataforma através do preenchimento dos dados solicitados.
-
-<img width="832" height="517" alt="captura2" src="https://github.com/user-attachments/assets/aad212df-d85b-4768-8af6-086092de8a9a" />
-
-### Tela Inicial
-
-A tela inicial apresenta o acesso às principais funcionalidades da plataforma, incluindo o feed e os botões de cadastro.
-
-<img width="832" height="517" alt="captura3" src="https://github.com/user-attachments/assets/fa2bd922-8d2a-4edc-840b-2914cd793b18" />
+<img width="884" height="609" alt="captura1" src="https://github.com/user-attachments/assets/fc52f4f6-b63d-4bd2-a311-fbdc8c8accdd" />
 
 ### Tela de Postagem
 
 A tela de postagem permite criar uma publicação contendo texto e uma imagem enviada através de upload.
 
-<img width="897" height="597" alt="captura4" src="https://github.com/user-attachments/assets/545ed41b-96e5-4177-a2c6-e26f114e1f50" />
+<img width="832" height="517" alt="captura2" src="https://github.com/user-attachments/assets/61b94115-9d3f-4d7c-836f-cacd543a8c36" />
 
-### Linha do Tempo e Feed Global
+### Tela Inicial
 
-A tela principal apresenta o feed global da plataforma, exibindo as publicações armazenadas, o autor da publicação, carimbo de data/hora, corpo do texto e a respectiva imagem anexada via upload.
+A tela inicial apresenta o acesso às principais funcionalidades da plataforma, incluindo o feed e os botões de cadastro.
 
-<img width="897" height="597" alt="captura5" src="https://github.com/user-attachments/assets/c697e37b-f8d3-4e75-b505-b913c06b6422" />
+<img width="832" height="517" alt="captura3" src="https://github.com/user-attachments/assets/966d843c-5657-4374-9997-15a935aa9ffd" />
 
+### Tela de Cadastro
+
+A tela de cadastro permite o registro de novos usuários na plataforma através do preenchimento dos dados solicitados.
+
+<img width="897" height="597" alt="captura4" src="https://github.com/user-attachments/assets/f22f64c3-f0e5-4bff-8f66-f39c77a25e65" />
+
+### Tela de Login
+
+A tela de login permite que usuários cadastrados realizem a autenticação utilizando suas credenciais.
+
+<img width="897" height="597" alt="captura5" src="https://github.com/user-attachments/assets/6f2ed24b-15cd-485d-9cae-5743842bd692" />
 ## Endpoints Desenvolvidos na API
 
 - **POST `/api/cadastro`**: Recebe nome, e-mail e senha. Realiza a verificação de duplicidade de registros e armazena os dados.
 - **POST `/api/login`**: Valida as credenciais enviadas em relação aos registros persistidos para autorização de acesso.
 - **POST `/api/posts`**: Processa strings de texto e arquivos binários de imagem (`multipart/form-data`), salvando os arquivos no diretório de uploads.
 - **GET `/api/feed`**: Retorna a coleção completa de publicações armazenadas para renderização em ordem cronológica inversa.
+
