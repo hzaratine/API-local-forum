@@ -65,5 +65,3 @@ A tela de login permite que usuários cadastrados realizem a autenticação util
 - **POST `/api/login`**: Valida as credenciais enviadas em relação aos registros persistidos para autorização de acesso.
 - **POST `/api/posts`**: Processa strings de texto e arquivos binários de imagem (`multipart/form-data`), salvando os arquivos no diretório de uploads.
 - **GET `/api/feed`**: Retorna a coleção completa de publicações armazenadas para renderização em ordem cronológica inversa.
-````
-
