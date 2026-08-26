@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css-paginas/login.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-message">
+            <h1>Bem-vindo de volta</h1>
+            <p>Insira suas credenciais de acesso para visualizar o seu perfil e interagir no sistema.</p>
+            <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Voltar para o Feed</a>
+        </div>
+        <div class="auth-form-box">
+            <h2>Acesso</h2>
+            <div class="form-group">
+                <input type="email" id="login-email" placeholder="E-mail">
+                <input type="password" id="login-password" placeholder="Senha">
+                <button onclick="logar()">Entrar</button>
+            </div>
+            <p class="switch-page">Nao tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </div>
+    </div>
+    <script src="js-paginas/login.js"></script>
+</body>
+</html>

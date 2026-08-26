@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Comunicacao</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">Sistema De Cadastro</div>
+            <div id="nav-actions">
+                <a href="cadastro.html" class="btn-nav">Criar Conta</a>
+                <a href="login.html" class="btn-nav btn-success">Entrar</a>
+            </div>
+            <div id="nav-user" class="hidden">
+                <span class="user-welcome">Ola, <strong id="user-display-name"></strong></span>
+                <button onclick="deslogar()" class="btn-danger">Sair</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        
+        <div id="publish-section" class="card hidden">
+            <h4>Nova Publicacao</h4>
+            <textarea id="post-text" placeholder="Digite o conteudo da publicacao..."></textarea>
+            <div class="upload-area">
+                <label for="post-image" class="file-label">
+                    <i class="fa-solid fa-image"></i> Selecionar Imagem
+                </label>
+                <input type="file" id="post-image" accept="image/*">
+            </div>
+            <button onclick="publicar()"><i class="fa-solid fa-paper-plane"></i> Publicar</button>
+        </div>
+
+        <div class="feed-container">
+            <h3>Feed Global</h3>
+            <div id="feed-posts"></div>
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

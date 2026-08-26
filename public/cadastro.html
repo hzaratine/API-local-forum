@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css-paginas/cadastro.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-message">
+            <h1>Seja bem-vindo a nossa plataforma</h1>
+            <p>Siga o cadastro para liberar todas as funcoes de interacao e publicacao.</p>
+            <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Voltar para o Feed</a>
+        </div>
+        <div class="auth-form-box">
+            <h2>Nova Conta</h2>
+            <div class="form-group">
+                <input type="text" id="reg-name" placeholder="Nome Completo">
+                <input type="email" id="reg-email" placeholder="E-mail">
+                <input type="password" id="reg-password" placeholder="Senha">
+                <button onclick="cadastrar()">Cadastrar</button>
+            </div>
+            <p class="switch-page">Ja tem uma conta? <a href="login.html">Entre aqui</a></p>
+        </div>
+    </div>
+    <script src="js-paginas/cadastro.js"></script>
+</body>
+</html>
