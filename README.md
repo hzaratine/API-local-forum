@@ -1,4 +1,4 @@
-# Fórum Local - Plataforma de Comunicação
+# Fórum Local - Protótipo Funcional
 
 Este projeto consiste em um protótipo funcional de uma plataforma de comunicação baseada na arquitetura cliente-servidor, desenvolvido como projeto pessoal para estudo e demonstração técnica. O sistema implementa um feed global com operações de cadastro de usuários, autenticação e persistência de publicações com upload de arquivos de imagem em ambiente local.
 
@@ -17,7 +17,7 @@ npm install express multer cors
 - **Manipulação de Uploads de Mídia:** Multer
 - **Controle de Acesso de Origens:** CORS
 - **Interface do Usuário:** HTML5, CSS3 e JavaScript Assíncrono (Fetch API)
-- **Framework de Ícones:** Font Awesome via CDN
+
 
 ## Estrutura do Diretório do Projeto
 
@@ -46,9 +46,9 @@ node server.js
 
 O servidor iniciará escutando requisições na porta 3000.
 
-## Evidências de Interface e Testes do Sistema
+## Prints de Demostração 
 
-### Linha do Tempo e Feed Global
+### Feed Global
 
 A tela principal apresenta o feed global da plataforma, exibindo as publicações armazenadas, o autor da publicação, carimbo de data/hora, corpo do texto e a respectiva imagem anexada via upload.
 
