@@ -1,6 +1,6 @@
-# Projeto de Conclusao de Curso - Sistema de Forum Local
+# Forum Local - Plataforma de Comunicacao
 
-Este projeto consiste em um prototipo funcional de uma plataforma de comunicacao baseada na arquitetura cliente-servidor. O sistema implementa um feed global com operacoes de cadastro de usuarios, autenticacao e persistencia de publicacoes com upload de arquivos de imagem em ambiente local, aplicando a identidade visual Frutiger Aero.
+Este projeto consiste em um prototipo funcional de uma plataforma de comunicacao baseada na arquitetura cliente-servidor, desenvolvido como projeto pessoal para estudo e demonstracao tecnica. O sistema implementa um feed global com operacoes de cadastro de usuarios, autenticacao e persistencia de publicacoes com upload de arquivos de imagem em ambiente local.
 
 ## Requisitos e Evidencias de Instalacao
 
@@ -13,7 +13,7 @@ O ambiente foi configurado localmente utilizando o gerenciador de pacotes do Nod
 - Servidor HTTP: Express.js
 - Manipulacao de Uploads de Midia: Multer
 - Controle de Acesso de Origens: CORS
-- Interface do Usuario: HTML5, CSS3 (Estetica Glassmorphism / Frutiger Aero) e JavaScript Assincrono (Fetch API)
+- Interface do Usuario: HTML5, CSS3 e JavaScript Assincrono (Fetch API)
 - Framework de Icones: Font Awesome via CDN
 
 ## Estrutura do Diretorio do Projeto
@@ -54,6 +54,7 @@ A imagem abaixo demonstra o carregamento dinamico das postagens armazenadas loca
 - POST `/api/login`: Valida as credenciais enviadas em relacao aos registros persistidos para autorizacao de acesso.
 - POST `/api/posts`: Processa strings de texto e arquivos binarios de imagem (Multipart Form-Data), salvando os arquivos no diretorio de uploads.
 - GET `/api/feed`: Retorna a colecao completa de publicacoes armazenadas para renderizacao em ordem cronologica inversa.
+
 <img width="897" height="597" alt="captura5" src="https://github.com/user-attachments/assets/9125313a-fc75-4232-82c5-9ede6c99b330" />
 <img width="897" height="597" alt="captura4" src="https://github.com/user-attachments/assets/a4a4cca4-c565-4b31-9620-9141149cb08c" />
 <img width="832" height="517" alt="captura3" src="https://github.com/user-attachments/assets/6c70ddc1-d940-4b15-9867-09958651985a" />
