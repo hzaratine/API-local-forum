@@ -33,31 +33,31 @@ Este projeto consiste em um protótipo funcional de uma plataforma de comunicaç
 
 A tela principal apresenta o feed global da plataforma, exibindo as publicações armazenadas, o autor da publicação, carimbo de data/hora, corpo do texto e a respectiva imagem anexada via upload.
 
-<img width="897" height="597" alt="Feed global" src="https://github.com/user-attachments/assets/9125313a-fc75-4232-82c5-9ede6c99b330">
+<img width="897" height="597" alt="Feed global" src="image_V96Sve.png">
 
 ### Tela de Postagem
 
 A tela de postagem permite criar uma publicação contendo texto e uma imagem enviada através de upload.
 
-<img width="897" height="597" alt="Tela de postagem" src="https://github.com/user-attachments/assets/a4a4cca4-c565-4b31-9620-9141149cb08c">
+<img width="897" height="597" alt="Tela de postagem" src="image_zZGrbg.png">
 
 ### Tela Inicial
 
 A tela inicial apresenta o acesso às principais funcionalidades da plataforma, incluindo o feed e os botões de cadastro.
 
-<img width="832" height="517" alt="Tela inicial" src="https://github.com/user-attachments/assets/6c70ddc1-d940-4b15-9867-09958651985a">
+<img width="832" height="517" alt="Tela inicial" src="image_3mtmou.png">
 
 ### Tela de Cadastro
 
 A tela de cadastro permite o registro de novos usuários na plataforma através do preenchimento dos dados solicitados.
 
-<img width="832" height="517" alt="Tela de cadastro" src="https://github.com/user-attachments/assets/c1d88888-46b1-4af5-9154-722e6e313a3f">
+<img width="832" height="517" alt="Tela de cadastro" src="image_zAVfe-.png">
 
 ### Tela de Login
 
 A tela de login permite que usuários cadastrados realizem a autenticação utilizando suas credenciais.
 
-<img width="884" height="609" alt="Tela de login" src="https://github.com/user-attachments/assets/2302ec8a-b897-4a76-b948-85c892adcca0">
+<img width="884" height="609" alt="Tela de login" src="image_19ZY4F.png">
 
 ## Endpoints Desenvolvidos na API
 
