@@ -5,11 +5,22 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-app.use(cors());
+
+app.use(cors({
+    origin: '*',
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type']
+}));
+
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+const uploadsDir = path.join(__dirname, 'uploads');
+if (!fs.existsSync(uploadsDir)){
+    fs.mkdirSync(uploadsDir);
+}
 
 const BANCO_FILE = path.join(__dirname, 'banco.json');
 
@@ -90,6 +101,7 @@ app.get('/api/feed', (req, res) => {
     res.json(banco.posts);
 });
 
-app.listen(3000, () => {
-    console.log("Servidor rodando em: http://localhost:3000");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Servidor rodando em: http://localhost:${PORT}`);
 });
