@@ -1,62 +1,69 @@
-# Forum Local - Plataforma de Comunicacao
+# Fórum Local - Plataforma de Comunicação
 
-Este projeto consiste em um prototipo funcional de uma plataforma de comunicacao baseada na arquitetura cliente-servidor, desenvolvido como projeto pessoal para estudo e demonstracao tecnica. O sistema implementa um feed global com operacoes de cadastro de usuarios, autenticacao e persistencia de publicacoes com upload de arquivos de imagem em ambiente local.
-
-## Requisitos e Evidencias de Instalacao
-
-O ambiente foi configurado localmente utilizando o gerenciador de pacotes do Node.js. Abaixo consta o registro em terminal da instalacao dos modulos de terceiros necessarios para a execucao da API (Express, Multer e CORS):
-
+Este projeto consiste em um protótipo funcional de uma plataforma de comunicação baseada na arquitetura cliente-servidor, desenvolvido como projeto pessoal para estudo e demonstração técnica. O sistema implementa um feed global com operações de cadastro de usuários, autenticação e persistência de publicações com upload de arquivos de imagem em ambiente local.
 
 ## Tecnologias e Bibliotecas Utilizadas
 
-- Ambiente de Execucao: Node.js
-- Servidor HTTP: Express.js
-- Manipulacao de Uploads de Midia: Multer
-- Controle de Acesso de Origens: CORS
-- Interface do Usuario: HTML5, CSS3 e JavaScript Assincrono (Fetch API)
-- Framework de Icones: Font Awesome via CDN
+- **Ambiente de Execução:** Node.js
+- **Servidor HTTP:** Express.js
+- **Manipulação de Uploads de Mídia:** Multer
+- **Controle de Acesso de Origens:** CORS
+- **Interface do Usuário:** HTML5, CSS3 e JavaScript Assíncrono (Fetch API)
+- **Framework de Ícones:** Font Awesome via CDN
 
-## Estrutura do Diretorio do Projeto
+## Estrutura do Diretório do Projeto
 
 ```text
-├── public/                 # Interface do Usuario (Front-end)
-│   ├── css/                # Estilizacao da pagina principal (Feed)
-│   ├── css-paginas/        # Estilizacao das paginas de acesso (Login/Cadastro)
-│   ├── js/                 # Logica de consumo da API do Feed
-│   ├── js-paginas/         # Logica de cadastro e login
-│   ├── index.html          # Pagina principal (Feed Global Publico)
-│   ├── cadastro.html       # Formulario de registro de usuario
-│   └── login.html          # Formulario de autenticacao
-├── server.js               # Servidor Back-end e definicao dos Endpoints
-├── package.json            # Manifesto de configuracao e dependencias do Node.js
-└── .gitignore              # Filtro de arquivos omitidos no controle de versao
+├── public/
+│   ├── css/
+│   ├── css-paginas/
+│   ├── js/
+│   ├── js-paginas/
+│   ├── index.html
+│   ├── cadastro.html
+│   └── login.html
+├── server.js
+├── package.json
+└── .gitignore
 ```
 
-## Instrucoes para Execucao Local e Inicializacao
-
-### 1. Execucao do Servidor
-Apos a instalacao das dependencias, o script do servidor back-end deve ser inicializado pelo comando de execucao do Node.js. A imagem abaixo evidencia o correto funcionamento do listener HTTP na porta 3000:
-
-
-## Evidencias de Interface e Testes do Sistema
-
-### Tela de Autenticacao (Cadastro e Acesso)
-Abaixo consta o registro visual da interface de gerenciamento de contas, estruturada de forma dividida com blocos de texto institucionais e painel lateral para a insercao de credenciais:
-
+## Evidências de Interface e Testes do Sistema
 
 ### Linha do Tempo e Feed Global
-A imagem abaixo demonstra o carregamento dinamico das postagens armazenadas localmente, exibindo o autor da publicacao, carimbo de data/hora, corpo do texto e a respectiva imagem anexada via upload:
 
+A tela principal apresenta o feed global da plataforma, exibindo as publicações armazenadas, o autor da publicação, carimbo de data/hora, corpo do texto e a respectiva imagem anexada via upload.
+
+<img width="897" height="597" alt="Feed global" src="https://github.com/user-attachments/assets/9125313a-fc75-4232-82c5-9ede6c99b330">
+
+### Tela de Postagem
+
+A tela de postagem permite criar uma publicação contendo texto e uma imagem enviada através de upload.
+
+<img width="897" height="597" alt="Tela de postagem" src="https://github.com/user-attachments/assets/a4a4cca4-c565-4b31-9620-9141149cb08c">
+
+### Tela Inicial
+
+A tela inicial apresenta o acesso às principais funcionalidades da plataforma, incluindo o feed e os botões de cadastro.
+
+<img width="832" height="517" alt="Tela inicial" src="https://github.com/user-attachments/assets/6c70ddc1-d940-4b15-9867-09958651985a">
+
+### Tela de Cadastro
+
+A tela de cadastro permite o registro de novos usuários na plataforma através do preenchimento dos dados solicitados.
+
+<img width="832" height="517" alt="Tela de cadastro" src="https://github.com/user-attachments/assets/c1d88888-46b1-4af5-9154-722e6e313a3f">
+
+### Tela de Login
+
+A tela de login permite que usuários cadastrados realizem a autenticação utilizando suas credenciais.
+
+<img width="884" height="609" alt="Tela de login" src="https://github.com/user-attachments/assets/2302ec8a-b897-4a76-b948-85c892adcca0">
 
 ## Endpoints Desenvolvidos na API
 
-- POST `/api/cadastro`: Recebe nome, e-mail e senha. Realiza a verificacao de duplicidade de registros e armazena os dados.
-- POST `/api/login`: Valida as credenciais enviadas em relacao aos registros persistidos para autorizacao de acesso.
-- POST `/api/posts`: Processa strings de texto e arquivos binarios de imagem (Multipart Form-Data), salvando os arquivos no diretorio de uploads.
-- GET `/api/feed`: Retorna a colecao completa de publicacoes armazenadas para renderizacao em ordem cronologica inversa.
+- **POST `/api/cadastro`**: Recebe nome, e-mail e senha. Realiza a verificação de duplicidade de registros e armazena os dados.
+- **POST `/api/login`**: Valida as credenciais enviadas em relação aos registros persistidos para autorização de acesso.
+- **POST `/api/posts`**: Processa strings de texto e arquivos binários de imagem (`multipart/form-data`), salvando os arquivos no diretório de uploads.
+- **GET `/api/feed`**: Retorna a coleção completa de publicações armazenadas para renderização em ordem cronológica inversa.
+````
 
-<img width="897" height="597" alt="captura5" src="https://github.com/user-attachments/assets/9125313a-fc75-4232-82c5-9ede6c99b330" />
-<img width="897" height="597" alt="captura4" src="https://github.com/user-attachments/assets/a4a4cca4-c565-4b31-9620-9141149cb08c" />
-<img width="832" height="517" alt="captura3" src="https://github.com/user-attachments/assets/6c70ddc1-d940-4b15-9867-09958651985a" />
-<img width="832" height="517" alt="captura2" src="https://github.com/user-attachments/assets/c1d88888-46b1-4af5-9154-722e6e313a3f" />
-<img width="884" height="609" alt="captura1" src="https://github.com/user-attachments/assets/2302ec8a-b897-4a76-b948-85c892adcca0" />
