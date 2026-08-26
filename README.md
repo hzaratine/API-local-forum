@@ -1,4 +1,4 @@
-# Fórum Local - Protótipo Funcional
+# Sistema de cadastro - Protótipo Funcional
 
 Este projeto consiste em um protótipo funcional de uma plataforma de comunicação baseada na arquitetura cliente-servidor, desenvolvido como projeto pessoal para estudo e demonstração técnica. O sistema implementa um feed global com operações de cadastro de usuários, autenticação e persistência de publicações com upload de arquivos de imagem em ambiente local.
 
