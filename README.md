@@ -1,73 +1,86 @@
-# Forum Local - Plataforma de Comunicacao
+# Fórum Local - Plataforma de Comunicação
 
-Este projeto consiste em um prototipo funcional de uma plataforma de comunicacao baseada na arquitetura cliente-servidor, desenvolvido como projeto pessoal para estudo e demonstracao tecnica. O sistema implementa um feed global com operacoes de cadastro de usuarios, autenticacao e persistencia de publicacoes com upload de arquivos de imagem em ambiente local.
+Este projeto consiste em um protótipo funcional de uma plataforma de comunicação baseada na arquitetura cliente-servidor, desenvolvido como projeto pessoal para estudo e demonstração técnica. O sistema implementa um feed global com operações de cadastro de usuários, autenticação e persistência de publicações com upload de arquivos de imagem em ambiente local.
 
-## Requisitos e Evidencias de Instalacao
+## Requisitos e Evidências de Instalação
 
-O ambiente foi configurado localmente utilizando o gerenciador de pacotes do Node.js. Abaixo consta o registro em terminal da instalacao dos modulos de terceiros necessarios para a execucao da API (Express, Multer e CORS):
+O ambiente foi configurado localmente utilizando o gerenciador de pacotes do Node.js. Instale os módulos necessários executando o comando abaixo no terminal:
 
+```bash
+npm install express multer cors
+```
 
 ## Tecnologias e Bibliotecas Utilizadas
 
-- Ambiente de Execucao: Node.js
-- Servidor HTTP: Express.js
-- Manipulacao de Uploads de Midia: Multer
-- Controle de Acesso de Origens: CORS
-- Interface do Usuario: HTML5, CSS3 e JavaScript Assincrono (Fetch API)
-- Framework de Icones: Font Awesome via CDN
+- **Ambiente de Execução:** Node.js
+- **Servidor HTTP:** Express.js
+- **Manipulação de Uploads de Mídia:** Multer
+- **Controle de Acesso de Origens:** CORS
+- **Interface do Usuário:** HTML5, CSS3 e JavaScript Assíncrono (Fetch API)
+- **Framework de Ícones:** Font Awesome via CDN
 
-## Estrutura do Diretorio do Projeto
+## Estrutura do Diretório do Projeto
 
 ```text
-├── public/                 # Interface do Usuario (Front-end)
-│   ├── css/                # Estilizacao da pagina principal (Feed)
-│   ├── css-paginas/        # Estilizacao das paginas de acesso (Login/Cadastro)
-│   ├── js/                 # Logica de consumo da API do Feed
-│   ├── js-paginas/         # Logica de cadastro e login
-│   ├── index.html          # Pagina principal (Feed Global Publico)
-│   ├── cadastro.html       # Formulario de registro de usuario
-│   └── login.html          # Formulario de autenticacao
-├── server.js               # Servidor Back-end e definicao dos Endpoints
-├── package.json            # Manifesto de configuracao e dependencias do Node.js
-└── .gitignore              # Filtro de arquivos omitidos no controle de versao
+├── public/                 # Interface do Usuário (Front-end)
+│   ├── css/                # Estilização da página principal (Feed)
+│   ├── css-paginas/        # Estilização das páginas de acesso (Login/Cadastro)
+│   ├── js/                 # Lógica de consumo da API do Feed
+│   ├── js-paginas/         # Lógica de cadastro e login
+│   ├── index.html          # Página principal (Feed Global Público)
+│   ├── cadastro.html       # Formulário de registro de usuário
+│   └── login.html          # Formulário de autenticação
+├── server.js               # Servidor Back-end e definição dos Endpoints
+├── package.json            # Manifesto de configuração e dependências do Node.js
+└── .gitignore              # Filtro de arquivos omitidos no controle de versão
 ```
 
-## Instrucoes para Execucao Local e Inicializacao
+## Instruções para Execução Local e Inicialização
 
-### 1. Execucao do Servidor
-Apos a instalacao das dependencias, o script do servidor back-end deve ser inicializado pelo comando de execucao do Node.js. A imagem abaixo evidencia o correto funcionamento do listener HTTP na porta 3000:
+### 1. Execução do Servidor
+Após a instalação das dependências, o script do servidor back-end deve ser inicializado pelo comando de execução do Node.js:
 
+```bash
+node server.js
+```
 
-## Evidencias de Interface e Testes do Sistema
+O servidor iniciará escutando requisições na porta 3000.
+
+## Evidências de Interface e Testes do Sistema
 
 ### Tela de Login
-A tela de login permite que usuarios cadastrados realizem a autenticacao utilizando suas credenciais.
 
-<img width="884" height="609" alt="captura1" src="https://github.com" />
+A tela de login permite que usuários cadastrados realizem a autenticação utilizando suas credenciais.
+
+<img width="884" height="609" alt="captura1" src="https://github.com/user-attachments/assets/55120ed2-2279-46a1-b32e-13ebdedd9662" />
 
 ### Tela de Cadastro
-A tela de cadastro permite o registro de novos usuarios na plataforma atraves do preenchimento dos dados solicitados.
 
-<img width="832" height="517" alt="captura2" src="https://github.com" />
+A tela de cadastro permite o registro de novos usuários na plataforma através do preenchimento dos dados solicitados.
+
+<img width="832" height="517" alt="captura2" src="https://github.com/user-attachments/assets/aad212df-d85b-4768-8af6-086092de8a9a" />
 
 ### Tela Inicial
-A tela inicial apresenta o acesso as principais funcionalidades da plataforma, incluindo o feed e os botoes de cadastro.
 
-<img width="832" height="517" alt="captura3" src="https://github.com" />
+A tela inicial apresenta o acesso às principais funcionalidades da plataforma, incluindo o feed e os botões de cadastro.
+
+<img width="832" height="517" alt="captura3" src="https://github.com/user-attachments/assets/fa2bd922-8d2a-4edc-840b-2914cd793b18" />
 
 ### Tela de Postagem
-A tela de postagem permite criar uma publicacao contendo texto e uma imagem enviada atraves de upload.
 
-<img width="897" height="597" alt="captura4" src="https://github.com" />
+A tela de postagem permite criar uma publicação contendo texto e uma imagem enviada através de upload.
+
+<img width="897" height="597" alt="captura4" src="https://github.com/user-attachments/assets/545ed41b-96e5-4177-a2c6-e26f114e1f50" />
 
 ### Linha do Tempo e Feed Global
-A tela principal apresenta o feed global da plataforma, exibindo as publicacoes armazenadas, o autor da publicacao, carimbo de data/hora, corpo do texto e a respectiva imagem anexada via upload.
 
-<img width="897" height="597" alt="captura5" src="https://github.com" />
+A tela principal apresenta o feed global da plataforma, exibindo as publicações armazenadas, o autor da publicação, carimbo de data/hora, corpo do texto e a respectiva imagem anexada via upload.
+
+<img width="897" height="597" alt="captura5" src="https://github.com/user-attachments/assets/c697e37b-f8d3-4e75-b505-b913c06b6422" />
 
 ## Endpoints Desenvolvidos na API
 
-- POST `/api/cadastro`: Recebe nome, e-mail e senha. Realiza a verificacao de duplicidade de registros e armazena os dados.
-- POST `/api/login`: Valida as credenciais enviadas em relacao aos registros persistidos para autorizacao de acesso.
-- POST `/api/posts`: Processa strings de texto e arquivos binarios de imagem (multipart/form-data), salvando os arquivos no diretorio de uploads.
-- GET `/api/feed`: Retorna a colecao completa de publicacoes armazenadas para renderizacao em ordem cronologica inversa.
+- **POST `/api/cadastro`**: Recebe nome, e-mail e senha. Realiza a verificação de duplicidade de registros e armazena os dados.
+- **POST `/api/login`**: Valida as credenciais enviadas em relação aos registros persistidos para autorização de acesso.
+- **POST `/api/posts`**: Processa strings de texto e arquivos binários de imagem (`multipart/form-data`), salvando os arquivos no diretório de uploads.
+- **GET `/api/feed`**: Retorna a coleção completa de publicações armazenadas para renderização em ordem cronológica inversa.
