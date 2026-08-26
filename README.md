@@ -29,35 +29,35 @@ Este projeto consiste em um protótipo funcional de uma plataforma de comunicaç
 
 ## Evidências de Interface e Testes do Sistema
 
-### Linha do Tempo e Feed Global
+### Tela de Login
 
-A tela principal apresenta o feed global da plataforma, exibindo as publicações armazenadas, o autor da publicação, carimbo de data/hora, corpo do texto e a respectiva imagem anexada via upload.
+A tela de login permite que usuários cadastrados realizem a autenticação utilizando suas credenciais.
 
-<img width="897" height="597" alt="Feed global" src="image_V96Sve.png">
-
-### Tela de Postagem
-
-A tela de postagem permite criar uma publicação contendo texto e uma imagem enviada através de upload.
-
-<img width="897" height="597" alt="Tela de postagem" src="image_zZGrbg.png">
-
-### Tela Inicial
-
-A tela inicial apresenta o acesso às principais funcionalidades da plataforma, incluindo o feed e os botões de cadastro.
-
-<img width="832" height="517" alt="Tela inicial" src="image_3mtmou.png">
+<img width="884" height="609" alt="captura1" src="https://github.com/user-attachments/assets/5406f7dd-dce6-4a47-8203-27ebb80a31dc" />
 
 ### Tela de Cadastro
 
 A tela de cadastro permite o registro de novos usuários na plataforma através do preenchimento dos dados solicitados.
 
-<img width="832" height="517" alt="Tela de cadastro" src="image_zAVfe-.png">
+<img width="832" height="517" alt="captura2" src="https://github.com/user-attachments/assets/f189f559-51fb-4ee2-b01c-cfc874bae7b2" />
 
-### Tela de Login
+### Tela Inicial
 
-A tela de login permite que usuários cadastrados realizem a autenticação utilizando suas credenciais.
+A tela inicial apresenta o acesso às principais funcionalidades da plataforma, incluindo o feed e os botões de cadastro.
 
-<img width="884" height="609" alt="Tela de login" src="image_19ZY4F.png">
+<img width="832" height="517" alt="captura3" src="https://github.com/user-attachments/assets/24b53ce1-9e4f-4b68-b0ba-bae2c8e5510d" />
+
+### Tela de Postagem
+
+A tela de postagem permite criar uma publicação contendo texto e uma imagem enviada através de upload.
+
+<img width="897" height="597" alt="captura4" src="https://github.com/user-attachments/assets/6025037e-4514-4d37-ae89-d9940e664796" />
+
+### Linha do Tempo e Feed Global
+
+A tela principal apresenta o feed global da plataforma, exibindo as publicações armazenadas, o autor da publicação, carimbo de data/hora, corpo do texto e a respectiva imagem anexada via upload.
+
+<img width="897" height="597" alt="captura5" src="https://github.com/user-attachments/assets/53466b98-39aa-4bcb-9433-bdb16cbe0eaf" />
 
 ## Endpoints Desenvolvidos na API
 
